@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title> Dashboard </title>
+</head>
+<body>
+    {% block pagename %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block menu %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+    <b><u><p>Перейдите по ссылке и выберите изображение</p></u></b>
+    <button> <a href="https://ru.freepik.com/">Выбрать изображение</a> </button>
+
+    <form method="post">
+    {% csrf_token %}
+    <br><br><b><u>{{ txt }}</u></b>
+    <br><br><label for="im_url">Введите URL изображения:</label>
+    <input type="text" id="im_url" name="im_url" maxlength=100 required>
+
+    <br><br><label for="im_name">Введите имя изображения:</label>
+    <input type="text" id="im_name" name="im_name" maxlength=30 required>
+
+
+    <br><br><button type="submit">Просмотр изображения</button>
+    <br><br><button type="submit">Загрузить изображение</button>
+
+    <br><br>{{ error }}
+
+    <br>
+    <h2>{{ hello }}</h2>
+</form>
+    {% endblock %}
+</body>
+</html>

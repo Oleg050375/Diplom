@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title> Home </title>
+</head>
+<body>
+    {% block pagename %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block menu %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+    <p> Контент </p>
+    {% endblock %}
+</body>
+</html>

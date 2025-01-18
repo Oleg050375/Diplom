@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title> Logout </title>
+</head>
+<body>
+    {% block pagename %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block menu %}
+    {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+
+    <br><br><p> Вы действительно хотите выйти? </p>
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="token" value="выход">
+        <button type="submit"> Выйти </button>
+    </form>
+    {% endblock %}
+</body>
+</html>

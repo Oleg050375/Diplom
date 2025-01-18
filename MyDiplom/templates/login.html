@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+</head>
+<body>
+{% block pagename %}
+{{ block.super }}
+{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block form %}
+<form method="post">
+    {% csrf_token %}
+    <br><br><b><u>{{ txt }}</u></b>
+    <br><br><label for="username">Введите логин:</label>
+    <input type="text" id="username" name="username" maxlength=30 required>
+
+    <br><br><label for="password">Введите пароль:</label>
+    <input type="text" id="password" name="password" minlength=8 required>
+
+    <br><br><button type="submit">Войти</button>
+
+    <br><br>{{ error }}
+
+    <br>
+    <h2>{{ hello }}</h2>
+</form>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

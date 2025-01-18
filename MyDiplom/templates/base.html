@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block pagename %}
+    <h1> {{ page_name }} </h1>
+    <h4> Текущий пользователь: {{ c_us }} </h4>
+    {% endblock %}
+    <hr>
+    {% block menu %}
+    <a href='http://127.0.0.1:8000/home'> Домашняя страница </a>
+    <br><a href='http://127.0.0.1:8000/dashboard'> Загрузка изображений </a>
+    <br><a href='http://127.0.0.1:8000/login'> Вход </a>
+    <br><a href='http://127.0.0.1:8000/logout'> Выход </a>
+    <br><a href='http://127.0.0.1:8000/registration'> Регистрация </a>
+    {% endblock %}
+    <hr>
+    {% block form %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
