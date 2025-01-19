@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyDiplom/templates/img1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/img1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/img1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/img2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +64,27 @@
       <option name="presentableId" value="Default" />
       <updated>1735878181222</updated>
     </task>
+    <task id="LOCAL-00001" summary="S2">
+      <option name="closed" value="true" />
+      <created>1737282597298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737282597298</updated>
+    </task>
+    <task id="LOCAL-00002" summary="S2">
+      <option name="closed" value="true" />
+      <created>1737282614581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737282614581</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="S2" />
+    <option name="LAST_COMMIT_MESSAGE" value="S2" />
   </component>
 </project>
