@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import requests
+from django.core.files.base import ContentFile
 from PIL import Image
 from django.views.generic import TemplateView
 from django.http import HttpResponse
@@ -32,15 +33,13 @@ def Dashboard(request):
         im_url = request.POST.get('im_url')  # получение URL изображения
         im_name = request.POST.get('im_name')  # получение имени изображения
         im = requests.get(im_url)  # загрузка изображения со страницы в инете в переменную
-        # создание фйла временного хранения и запись туда изображения
-        im_f = open('img1', 'wb')  # открытие файла временного хранения изображения
-        im_f.write(im.content)  # запись загруженного изображения в файл временного хранения
-        im_f.close()
-        # чтение изображения из файла временного хранения, запись в БД и закрытие файла временного хр-я
-        im_f = open('img1', 'rb')
-        im_f_r = im_f.read()  # чтение содержимого файла временного хранения в переменную
-        Images.objects.create(image=im_f_r, image_name=im_name)  # запись изображения в БД
-        im_f.close()
+        # создание объекта содержимого загруженного файла и запись в БД
+        im_cont = ContentFile(im.content, name=im_name)
+        Images.objects.create(image=im_cont, image_name=im_name)  # запись изображения в БД
+        # чтение из БД
+        im_read_obj = Images.objects.get(image_name=im_name)
+        im_read_im = im_read_obj.image
+        print(im_read_im)
     context = {'page_name': page_name, 'c_us': c_us}
     return render(request, 'dashboard.html', context)
 
