@@ -9,6 +9,8 @@ class User(models.Model):
 class Images(models.Model):
     image = models.ImageField()
     image_name = models.CharField(max_length=30, default=None)
+    lord = models.CharField(max_length=30, default=None)
+    status = models.CharField(max_length=30, default=None)
 
 """
 class Game(models.Model):

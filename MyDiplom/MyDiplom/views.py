@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import requests
 from django.core.files.base import ContentFile
+import os
 from PIL import Image
 from django.views.generic import TemplateView
 from django.http import HttpResponse
@@ -12,12 +13,29 @@ a = None  # глобальная переменная текущего поль�
 
 def Home(request):  # функция обработки домашней страницы
     global a
-    if a == None:
+    if a == None:  # обработка случая без вошедшего пользователя
         c_us = a
-    else:
+        im_read_obj = None
+        im_read_all = None
+    else:  # обработка ситуации с вошедшим пользователем
         c_us = a.username
+        im_read_obj = None
+        im_read_all = Images.objects.filter(lord=c_us)
     page_name = 'Домашняя страница'
-    context = {'page_name': page_name, 'c_us': c_us}
+    proc_name = None
+    del_name = None
+    if request.method == 'POST':
+        proc_name = request.POST.get('image')  # получение названия изображения для обработки
+        del_name = request.POST.get('delete')  # получение названия изображения для удаления
+        if proc_name:
+            Images.objects.filter(image_name=proc_name).update(status='обработано')
+        else:
+            im_del = Images.objects.get(image_name=del_name)  # чтение удаляемой записи
+            im_path = os.getcwd() + '\media\\' + del_name  # формирование пути до удаляемого файла
+            im_del.delete()  # удаление записи в БД
+            os.remove(im_path)  # удаление файла изображения
+        print(proc_name, del_name)
+    context = {'page_name': page_name, 'c_us': c_us, 'im_read_obj': im_read_obj, 'im_read_all': im_read_all}
     return render(request, 'home.html', context)
 
 
@@ -28,19 +46,23 @@ def Dashboard(request):
     else:
         c_us = a.username
     page_name = 'Загрузка изображений'
-    if request.method == 'POST':
+    im_read_obj = None
+    im_status = 'не обработано'
+    error = ''
+    if request.method == 'POST' and a != None:
         # вынимание файла из запроса и запись его в переменную
         im_url = request.POST.get('im_url')  # получение URL изображения
         im_name = request.POST.get('im_name')  # получение имени изображения
         im = requests.get(im_url)  # загрузка изображения со страницы в инете в переменную
         # создание объекта содержимого загруженного файла и запись в БД
         im_cont = ContentFile(im.content, name=im_name)
-        Images.objects.create(image=im_cont, image_name=im_name)  # запись изображения в БД
+        Images.objects.create(image=im_cont, image_name=im_name, status=im_status, lord=c_us)  # запись изображения в БД
         # чтение из БД
-        im_read_obj = Images.objects.get(image_name=im_name)
-        im_read_im = im_read_obj.image
-        print(im_read_im)
-    context = {'page_name': page_name, 'c_us': c_us}
+        im_read_obj = Images.objects.get(image_name=im_name)  # чтение записи из БД
+        #im_url = im_read_obj.image.url  # получение URL сохранённого изображения
+    elif request.method == 'POST' and a == None:
+        error = 'Вы не можете загрузить изображение, пока не войдёте в аккаунт'
+    context = {'page_name': page_name, 'c_us': c_us, 'im_read_obj': im_read_obj, 'error': error}
     return render(request, 'dashboard.html', context)
 
 

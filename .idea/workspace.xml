@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/media/Oleg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/media/katy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/media/nty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/media/qwrty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/templates/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,11 +86,20 @@
       <option name="project" value="LOCAL" />
       <updated>1737283596634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="S3">
+      <option name="closed" value="true" />
+      <created>1737630713750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737630713750</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="S2" />
-    <option name="LAST_COMMIT_MESSAGE" value="S2" />
+    <MESSAGE value="S3" />
+    <option name="LAST_COMMIT_MESSAGE" value="S3" />
   </component>
 </project>
