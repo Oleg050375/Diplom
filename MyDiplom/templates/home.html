@@ -15,7 +15,30 @@
     {% endblock %}
 
     {% block content %}
-    <p> Контент </p>
+    <h3> Ваши изображения </h3>
+    {% for i in im_read_all %}
+        <figure style="border:7px ridge; width:300px;">
+        <img src="{{ i.image.url }}" alt="{{ i.image_name }}" width="300"/>
+            <!--<form method="post">
+            {% csrf_token %}-->
+                <figcaption style="padding:0 0 0 5px;"> {{ i.image_name }}
+                    <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="image" value="{{ i.image_name }}">
+                    <button type="submit"> Обработать изображение </button>
+                    </form>
+                </figcaption>
+                <figcaption style="padding:5px 0 0 5px;">
+                    <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="delete" value="{{ i.image_name }}">
+                    <button type="submit"> Удалить </button>
+                    </form>
+                </figcaption>
+                <p style="padding:0 0 0 5px; line-height:0px"> Результат обработки: {{ i.status }} </p>
+            <!--</form>-->
+        </figure>
+    {% endfor %}
     {% endblock %}
 </body>
 </html>

@@ -27,8 +27,6 @@
     <br><br><label for="im_name">Введите имя изображения:</label>
     <input type="text" id="im_name" name="im_name" maxlength=30 required>
 
-
-    <br><br><button type="submit">Просмотр изображения</button>
     <br><br><button type="submit">Загрузить изображение</button>
 
     <br><br>{{ error }}
@@ -36,7 +34,10 @@
     <br>
     <h2>{{ hello }}</h2>
 </form>
-    <img src="D:\DSC01051.JPG"/>
+    <figure>
+    <figcaption> {{ im_read_obj.image_name }} </figcaption>
+    <img src="{{ im_read_obj.image.url }}" alt="{{ im_read_obj.image_name }}"/>
+    </figure>
     {% endblock %}
 </body>
 </html>

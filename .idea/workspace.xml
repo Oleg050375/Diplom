@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S2" />
+    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/media/Oleg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/media/katy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/media/nty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/media/qwrty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/templates/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.exp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/Проекты/Diplom/MyDiplom/templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.exp.executor": "Run",
+    "Python.models.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Python/Проекты/Diplom/MyDiplom/templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\Проекты\Diplom\MyDiplom\templates" />
