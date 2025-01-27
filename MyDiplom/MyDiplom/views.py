@@ -2,6 +2,7 @@ from django.shortcuts import render
 import requests
 from django.core.files.base import ContentFile
 import os
+#from ssd import detect_objects
 from PIL import Image
 from django.views.generic import TemplateView
 from django.http import HttpResponse
@@ -140,3 +141,4 @@ def Registration(request):  # функция обработки страницы
                 error = 'Пароли не совпадают'
     context = {'txt': txt, 'error': error, 'hello': hello, 'page_name': page_name, 'c_us': c_us}
     return render(request, 'registration.html', context)
+
