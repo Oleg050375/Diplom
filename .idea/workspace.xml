@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S3" />
+    <list default="true" id="92895647-f378-49e4-8c21-c96ee427f7f7" name="Changes" comment="S3">
+      <change afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/ssd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/exp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDiplom/MyDiplom/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/DSC01051.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDiplom/templates/img1.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -35,6 +43,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Python.exp.executor": "Run",
     "Python.models.executor": "Run",
+    "Python.ssd.executor": "Run",
     "Python.views.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
