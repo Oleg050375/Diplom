@@ -1,16 +1,21 @@
 from django.db import models
 
 
-class User(models.Model):
-    username = models.CharField(max_length=20)
-    password = models.CharField(max_length=20)
+class User(models.Model):  # таблица пользователей
+    username = models.CharField(max_length=20)  # имя пользователя
+    password = models.CharField(max_length=20)  # пароль пользователя
 
 
-class Images(models.Model):
-    image = models.ImageField()
-    image_name = models.CharField(max_length=30, default=None)
-    lord = models.CharField(max_length=30, default=None)
-    status = models.CharField(max_length=30, default=None)
+class Images(models.Model):  # таблица изображений
+    image = models.ImageField(default=None)  # исходное изображение
+    prc_path = models.CharField(max_length=100, default=None)  # название изображения
+    image_name = models.CharField(max_length=30, default=None)  # название изображения
+    lord = models.CharField(max_length=30, default=None)  # владелец изображения
+    status = models.CharField(max_length=30, default=None)  # результат распознавания
+
+class Prcresult(models.Model):  # таблица результатов обработки
+    prc_image_name = models.CharField(max_length=30, default=None)  # название обработанного изображения
+    prc_status = models.CharField(max_length=30, default=None)  # результат распознавания
 
 """
 class Game(models.Model):
